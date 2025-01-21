@@ -1,0 +1,86 @@
+main{
+    margin: 60px 350px;
+}
+
+.mainnav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+}
+.btn{
+    background-color: #E7FAFE;
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.rectangle{
+    background-image: url(/cuisine/media/rectangle.svg);
+    width: 180px;
+    height: 152px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.rectangle img{
+    position: absolute;
+}
+
+.rectangle p{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.rectangle img{
+    top: -20px;
+    
+}
+
+.img1{
+    right: -4%;
+}
+
+.rectangle1{
+    background-image: url(/cuisine/media/rectangle1.svg);
+    width:400px; 
+    height:434px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rectangle1 h1{
+    font-size: 3em;    
+}
+
+.inner-rectangle{
+    width: 368px;
+    height: 250px;
+    border-radius: 20px;
+}
+.inner-rectangle img{
+    border-radius: 20px;
+}
+
+.fotter_rec{
+    display: flex;
+    gap: 20px;
+}
+.fotterrec{
+    display: flex;
+}
+.fotterrec1{
+    display: flex;
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:1880px;
+    height: 849px;
+    
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #f2f2f2;
+    padding: 0px 20px 0px 20px;
+}
+
+main{
+    background-image: linear-gradient(#f1b5b8, #d9d9d9);
+    
+}
+
+.container{
+    width: 1140px;
+    height: 849px;
+}
+
+.left__img{
+    width: 280px;
+    height: 322px;
+    background-color: #ffffff;
+}
+
+.right__img{
+    width: 280px;
+    height: 322px;
+    background-color: #ffffff;
+}

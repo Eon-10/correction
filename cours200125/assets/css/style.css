@@ -1,0 +1,60 @@
+@import url(/assets/css/reset.css);
+
+body{   
+    
+    color: #fff;
+    border: 1px red solid;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: #29347B ;
+    margin: auto;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+.article1 {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border:1px solid red;
+    }
+
+.article1 img{
+    height: 160px;
+    width: 170px;
+}
+
+.article1 h2{
+text-align: center;}
+
+.height{
+    width: auto;
+}
+button{
+    height: 40px;
+    width: 70px;
+    background-color: gray;
+}
+
+button:hover{
+    background-color: green;
+}
+
+button:active{
+    background-color: red;
+}
+
+@media  (0px <= width<= 300px){
+    .article1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}

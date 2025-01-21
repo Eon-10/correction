@@ -1,0 +1,111 @@
+#site{
+
+    width: 100%;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0;
+}
+
+/* header{
+    display:flex;
+    justify-content:space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+} */
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    justify-content: space-around;
+}
+
+header img:first-child{
+    height: 70px;
+    width: 110px; 
+}
+
+ul li p{
+    
+}
+
+
+
+
+/*
+header div img:first-child{
+    height: 70px;
+    width: 110px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    justify-content: right;
+}
+
+header, main, footer,section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+} */
+
+
+
+/* header section div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+header section div img:first-child{
+    size: 15px 20px;
+    height: 40px;
+    width: 60px;
+}
+
+h1{
+    margin-top: 100px;
+    display: inline;
+} */
+
+/* .search{
+    display: inline;
+}
+
+.rs {
+    display: inline;
+} */
+
+/* section {
+    position: relative;
+}
+
+
+header section>section div{
+    display: flex;
+    height:  */
+
+/* 
+header section{
+    display: flex;
+    align-items: center;
+}
+
+header section div:first-child{
+    display: flex;
+    align-items: center;
+} */

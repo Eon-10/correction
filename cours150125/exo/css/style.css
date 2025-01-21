@@ -1,0 +1,163 @@
+.body {
+    display: grid;
+    grid-template-areas:
+      "banner banner banner"
+      "menu content sidebar"
+      "footer footer footer";
+    grid-template-columns: 0.5fr 3fr 1fr;
+    /* Largeurs relatives */
+    grid-template-rows: auto 1fr auto;
+    /* Hauteurs flexibles */
+    min-height: 100vh;
+    gap: 10px;
+    /* Espacement entre les sections */
+    padding: 10px;
+  }
+
+  .banner {
+    grid-area: banner;
+    height: 5rem;
+    background-position: center;
+    background-color: #17A2B8;
+    background-image: url(./images/baltic-sea-7434540_1280.jpg);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  .menu {
+    grid-area: menu;
+    background-color: #28A745;
+    color: white;
+    padding: 20px;
+  }
+
+  .content {
+    grid-area: content;
+    background-color: #FFC107;
+    color: black;
+    padding: 20px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #17A2B8;
+    color: white;
+    padding: 20px;
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: #6C757D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+
+  .header-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .nav-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+
+  }
+
+  .nav-index p {
+
+    align-self: self-start;
+  }
+
+  /* positionnement spécifique avec grid-column et grid-row  */
+  .contain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+
+  }
+
+  .items {
+    border: 1px solid black;
+  }
+
+  .item1 {
+    /* de la colonne 1 à 2 avant le 3 */
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .item2 {
+    grid-column: 3/5;
+    grid-row: 1/3
+  }
+
+  .item3 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .item4 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+
+@media  screen and (max-width: 768px) { 
+
+    .body {
+        display: grid;
+        grid-template-areas:
+        "banner banner"
+        "menu menu"
+        "content sidebar"
+        "footer footer";
+        grid-template-columns: 3fr 1fr;
+        }
+
+    .nav-index{
+        flex-direction: row;
+        gap: 20px;
+    }
+    }
+
+@media  screen and (max-width: 480px){
+    .body {
+        display: grid;
+        grid-template-areas:
+        "banner"
+        "menu"
+        "content"
+        "sidebar"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+
+    .contain {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows:repeat(auto-fit, minmax(100px, 1fr));
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        background-color: #f4f4f4;
+}
+.items {
+    display: block;
+    flex-wrap: wrap;
+    height: 200px;
+}
+}

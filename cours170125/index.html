@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours sur les Animations CSS</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2 { color: #333; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 5px; }
+        .example { background: #e8e8e8; padding: 10px; border-left: 5px solid #333; margin-bottom: 20px; }
+ 
+        /* Animation simple avec keyframes */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            transition: transform 200ms ease-in-out;
+            animation: move 1s infinite alternate ;
+        }
+ 
+        @keyframes move {
+            from { bottom: 50px ; right: 1500px; transform: scale(1) rotate(0deg)}
+            to { left: 1400px;  transform: scale(1.5) rotate(45deg) }
+        }
+ 
+        /* Transition avec transform */
+        .hover-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: transform 0.5s ease-in-out;
+        }
+ 
+        .hover-box:hover {
+            transform: scale(1.2) rotate(15deg);
+        }
+ 
+        /* Translate animation */
+        .translate-box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            animation: translateAnim 3s infinite alternate;
+            
+        }
+ 
+        @keyframes translateAnim {
+            from { transform: translateX(0); }
+            to { transform: translateX(200px); }
+        }
+ 
+        /* Scale et Rotate Animation */
+        .scale-rotate-box {
+            width: 120px;
+            height: 120px;
+            background-color: orange;
+            animation: scaleRotate 1s infinite alternate;
+        }
+ 
+        @keyframes scaleRotate {
+            from { transform: scale(1) rotate(0deg); }
+            to { transform: scale(1.5) rotate(45deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Cours sur les Animations CSS</h1>
+    <p>Les animations CSS permettent de créer des effets de transition et de mouvement sans utiliser JavaScript.</p>
+    
+    <h2>Animation avec @keyframes</h2>
+    <p>Les keyframes définissent les étapes d'une animation :</p>
+    <ul>
+        <li><code>@keyframes</code> : Permet de définir une séquence d'animation.</li>
+        <li><code>from</code> et <code>to</code> : Définissent les états de début et de fin.</li>
+    </ul>
+    <div class="example">
+        <div class="box"></div>
+    </div>
+    
+    <h2>Transition avec transform</h2>
+    <p>Les transitions permettent de lisser les changements de propriétés :</p>
+    <ul>
+        <li><code>transition</code> : Définit la durée et l'effet de transition.</li>
+        <li><code>transform</code> : Permet d'appliquer des transformations comme <code>scale</code>, <code>rotate</code>, et <code>translate</code>.</li>
+    </ul>
+    <div class="example">
+        <div class="hover-box"></div>
+    </div>
+    
+    <h2>Animation avec Translate</h2>
+    <p><code>translateX</code> et <code>translateY</code> permettent de déplacer un élément sur les axes X et Y.</p>
+    <div class="example">
+        <div class="translate-box"></div>
+    </div>
+    
+    <h2>Animation avec Scale et Rotate</h2>
+    <p><code>scale</code> permet d'agrandir/réduire un élément, tandis que <code>rotate</code> le fait pivoter.</p>
+    <div class="example">
+        <div class="scale-rotate-box"></div>
+    </div>
+</body>
+</html>
+ 

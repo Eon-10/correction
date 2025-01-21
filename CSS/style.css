@@ -1,0 +1,55 @@
+/* la on definit le H1 */
+/* La syntaxe de CSS commence : {} , pour terminer ; */
+/* il y a une marge par défaut */ 
+/* ce code permet d'enlever la marge */
+
+/* marge extérieur marging, marge exterieur pading
+{ 
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*/
+
+/* la on viens d'aller sur google pour  un " reset meyer" */
+h1{
+
+    color: blueviolet;
+
+}
+
+/* ici la div permet de faire un carré rouge de 100 pixel de hauteur et 100 de largeur */
+/* a voir ce que c'est que le first child qui n'a pas fonctionner, il y a aussi le nth-of-type /  (1) puis (2) pour faire différement */
+
+div:first-of-type{ 
+
+    width: 50px;
+    height: 50px;
+    background-color: red;
+
+/* margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    float: left;
+    margin-right: 50px;*/
+
+    margin: 50px 30px;
+    float: left;
+    padding: 100px 50px;
+}
+
+/* margin top c'est en haut, margin left gauche, ect... */
+
+
+div:last-of-type { 
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(42, 165, 104);
+    float: left;
+
+}
+
+/* il y a deux type de div ( de type block ou type inline ) */

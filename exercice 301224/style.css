@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#form1{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 150px;
+}
+
+#form1 section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#form1 section fieldset{
+    width: 49%;
+    height: auto;
+    padding: 20px;
+}
+
+#form1 section fieldset legend{
+    padding: 0 10px;
+    color: red;
+}
+
+#form1 fieldset div{
+    padding: 8px 0;
+    display: flex;
+    
+}
+
+#form1 fieldset div label:not(label[for="homme"]),#form1 section fieldset div p, #dip{
+    display: block;
+    width: 250px;
+}
+
+#form1 section fieldset div input:not(input[type="button"], input[type="radio"], input[type="checkbox"], input[type="color"]){
+    width: 200px;
+}
+
+label[for="homme"],label[for="femme"]{
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+#form1 fieldset div span {
+    display: flex;
+}
+
+#form1 fieldset:last-child p{
+margin: 5px;
+}
+
+input[type="button"]{
+    display: block;
+    margin-left: 50px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    border-color: green;
+    box-shadow: 1px 1px 5px black;
+}
+
+input[type="button"]:hover{
+    background-color: black;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#form1 fieldset:last-child div span
+{
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+#dip label{
+    width: auto;
+}
+
+textarea{
+    width: 70%;
+    margin-top: 30px;
+    min-height: 100px;
+    resize: none;
+}
+
+#form1>div{
+
+margin-top: 20px;
+display: flex;
+justify-content: center;
+}
+
+#form1>div>input{
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin: 0 10px;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#form1>div>input:first-child:hover{
+    background-color: red;
+}
+#form1>div>input:last-child:hover{
+    background-color: green;}

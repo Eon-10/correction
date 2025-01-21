@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- utiliser la method post pas get car ce nes pas secure -->
+    <!-- pour le enctype c'est quand il y a de l'upload de fichier  -->
+    <form id="form1" method="post" action="" enctype="multipart/form-data">
+        <section>
+        <fieldset>
+            <legend>Block 1</legend>
+        <div>
+            <label for="nom">NOM:</label>
+            <input id="nom" type="text" name="nom" required placeholder="Entrez votre Nom">
+        </div>
+        <div>
+            <label for="prenom">Prénom:</label>
+            <input id="prenom" type="text" name="prenom" required placeholder="Entrez votre Prénom">
+        </div>
+        <div>
+            <label for="mail">Votre email</label>
+            <input id="mail" type="email" name="mail" required placeholder="Entrez votre Email">
+        </div>
+        <div>
+            <p>Vous êtes:</p>
+            <span>
+                <input id="homme" type="radio" name="genre">
+                <label for="homme">H:</label>
+            
+                <input id="femme" type="radio" name="genre">
+                <label for="femme">F:</label>
+            </span>
+        </div>
+        <div>
+            <label for="adresse">Votre adresse</label>
+            <input id="adresse" type="adress" name="adresse" required placeholder="Entrez votre adresse">
+        </div>
+        <div>
+            <label for="date">Prendre un rendez-vous:</label>
+            <input id="date" type="date" name="date">
+        </div>
+        <div>
+            <label for="tel">Votre numéro de télephone:</label>
+            <input id="tel" type="tel" name="tel">
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Block 2</legend>
+        <div>
+            <label for="nombre">Nombre d'enfants</label>
+            <input id="nombre" type="number" name="nombre" min="0" max="10">
+        </div>
+        <div>
+        <p>Précisez un jour de disponible:</p>
+            <select id="select">
+                <option >Jour de disponible</option>
+                    <option value="lun">Lundi</option>
+                    <option value="mar">Mardi</option>
+                    <option value="mer">Mercredi</option>
+                    <option value="jeu">Jeudi</option>
+                    <option value="ven">Vendredi</option>
+                    <option value="sam">Samedi</option>
+                    <option value="dim">Dimanche</option>
+            </select>
+        </div>
+        <div>
+            <label for="password">Entrez votre mot de passe:</label>
+            <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe">
+        </div>
+        <div>
+            <p>
+                vos diplômes:
+            </p>
+            <span id="dip">
+                <input type="checkbox" id="bac" name="bac">
+                <label for="bac">Bac:</label>
+            
+                <input type="checkbox" id="bts" name="bts">
+                <label for="bts">BTS:</label>
+            
+                <input type="checkbox" id="master" name="master">
+                <label for="master">Master:</label>
+            </span>
+        </div>
+        <div>
+            <label for="color">Votre couleur préféré:</label>
+            <input type="color" id="color" name="color">
+        </div>
+        <div>
+            <label for="file">Uploadez vos diplomes:</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <input type="search" name="search" id="search">
+            <input type="button" value="rechercher" id="btn-search">
+        </div>
+        <div>
+            <label for="url">votre site internet:</label>
+            <input type="url" name="url" id="url" placeholder="Entrez votre adresser web">
+        </div>
+    
+        <textarea></textarea>
+    </fieldset>
+</section>
+<div>
+        <input type="reset" name="reset" value="annuler">
+        <input type="submit" id="submit" value="submit">
+    </div>    
+    </form>
+</body>
+</html>

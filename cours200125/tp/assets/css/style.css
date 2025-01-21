@@ -1,0 +1,171 @@
+@import url(/assets/css/reset.css);
+
+body{
+    margin: 10px 10px 0px 10px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+}
+
+.first__head{
+    display: flex;}
+
+.logo{
+    margin-right: 15px;
+}
+
+    .first__headinner{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.second__headinner{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.third__headinner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: pink;
+    height: 120px;
+    width:25%;
+    padding-left: 15px;
+}
+
+.headitemsthird{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav{
+    height: 40px;
+    background-color: #010645;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.nav p{
+height: 40px;
+padding: 0px 10px 0px 10px;
+display: flex;
+align-items: center;
+}
+
+.nav p:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+.container__mainfirst{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.main__first{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main__first img{
+    width: 170px;
+}
+.main__second{
+    width: 700px;
+}
+
+.main__third{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 20px;
+}
+
+.third__inner1{
+    display: flex;
+    gap: 10px;
+}
+
+hr{
+    border: 2px solid black;
+    margin-bottom: 70px;
+}
+
+.container__mainsecond{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+.inner_items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.items__container__second{
+    display: flex;
+    gap: 20px;
+}
+
+.items__container__second p{
+    display: flex;
+    width: 360px;
+    gap: 20px;
+}
+
+.inner_items a{
+    align-self: self-end;
+    color: pink;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: #010645;
+    display: flex;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #fff;
+}
+
+footer ul li{
+    display: flex;
+    
+}
+
+@media  (0px <= width<= 1260px){
+
+    .head{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 100px;
+    }
+
+}

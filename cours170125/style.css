@@ -1,0 +1,60 @@
+
+
+div{
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.divafter::before{
+    content: " div before ";
+    margin-right: 10px;
+}
+
+button::after{
+    content: "\f11b";
+    display: inline-block;
+    font-family: "font Awesome 6 free";
+    font-weight: 900;
+    color: red;
+}
+.divafter::after{
+    content: "div after";
+}
+
+
+
+.box {
+    width: 150px;
+    height: 50px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    transition: 0.3s all;
+}
+
+/* Ajoute une flèche après le texte */
+.box::after {
+    content: " ➜";
+    font-size: 20px;
+    opacity: 0;
+    /* Masqué par défaut */
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Quand on clique sur la div */
+.box:active {
+    background-color: #e74c3c;
+}
+
+/* Quand la div est active, l’icône apparaît */
+.box:active::after {
+    opacity: 1;
+    transform: translateX(5px);
+    color: green;
+    font-size: 40px;
+}
