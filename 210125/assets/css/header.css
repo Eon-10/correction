@@ -1,0 +1,33 @@
+.head
+{
+    background-image: url(/assets/media/planches.jpg);
+    
+}
+
+.head h1
+{
+    text-align: center;
+    
+}
+
+
+
+.menu
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a
+{
+    color: #964c96;
+    font-size: 25px;
+}
+
+.image_head
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
