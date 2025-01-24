@@ -1,0 +1,49 @@
+.b-red{
+    border: 1px solid red;
+}
+
+.carre{
+    background : linear-gradient( to right, #619f56, #13221f) 
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+.bg-green{
+    background : linear-gradient( to right, #619f56, #13221f) 
+}
+
+.container-child{
+    /* height: 20rem;
+    overflow: hidden; */
+}
+
+/* A verifier  */
+.img2{
+    height: 20rem !important;
+}
+
+.bgg{
+    background : linear-gradient( 90deg, #89d37c, #090f0e);
+}
+
+.bgg2{
+    background : linear-gradient( 90deg, #f0f0e8, #32653f);
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/27/17/10/pendulum-1934311_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boximg{
+    height: 20rem;
+}
+
+h3{
+    background-image: linear-gradient(90deg, rgb(173, 171, 37), rgb(122, 50, 110));
+    color: transparent;
+    background-clip: text;
+}
