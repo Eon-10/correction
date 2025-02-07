@@ -1,0 +1,19 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: rgb(41, 41, 145);
+    color: white;
+    border-radius: 40%;
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+
+}
+
+.modal{
+    display: none;
+}
