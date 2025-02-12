@@ -31,13 +31,13 @@
 //     alert("nb2 est inférieur à 50")
 // } else{
 //     alert("nb2 est supérieur à 50")
-// }
+// // }
 
-let maxAge=18
+// let maxAge=18
 
-let age = Number(prompt('quel est votre age ?')) //ont change le age qui est en string en number
-console.log(age);
-// console.log(typeof age);
+// let age = Number(prompt('quel est votre age ?')) //ont change le age qui est en string en number
+// console.log(age);
+// // console.log(typeof age);
 
 
 // if (age>maxAge){
@@ -50,10 +50,37 @@ console.log(age);
 // else {
 //     console.log("Warning FBI !! "); }
 
-if(isNaN(age)){
-    alert("erreur : données invalides ecriver un numéro")
-}else if (age<=maxAge){
-    alert("rentre chez toi petit !")
-}else{
-    alert("bienvenue")
+// if(isNaN(age)){
+//     alert("erreur : données invalides ecriver un numéro")
+// }else if (age<=maxAge){
+//     alert("rentre chez toi petit !")
+// }else{
+//     alert("bienvenue")
+// }
+
+
+// switch
+
+// l'instruction switch est utilisé pour remplacer une série de conditions "if, else if, else " lorsque l'on doit comparer une valeur à plusieurs cas possible
+
+const jour="vendredi"
+
+switch(jour){
+    case "lundi":
+        console.log("debut de semaine");
+        break
+    case "mardi":
+    case "mercredi":       
+    console.log("milieu de semaine");
+    break
+    case "jeudi":
+    case "vendredi":
+        console.log("fin de semaine");
+    case "samedi":
+    case "dimanche":
+        console.log("c'est le weekend");
+        break
+    default:
+        console.log("jour inconnu");     
+    
 }

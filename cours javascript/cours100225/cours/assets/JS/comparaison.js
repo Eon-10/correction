@@ -26,7 +26,7 @@ let prenom="Nassuf"
 
 // si mon prénom indiqué dans le prompt est égal à let prenom alors alert disant au revoirs
 
-// let loginPrenom=prompt("quel est ton prénom ?")
+//let loginPrenom=prompt("quel est ton prénom ?")
 // let resultPrompt=loginPrenom.charAt(0).toUpperCase()+prenom
 
 let prenom1 = prompt('quel est votre nom ?') //ont change le age qui est en string en number
